@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Muli", sans-serif; /* Use "Muli" instead of "muli" */
+}
+
+.navbar {
+    background-color: #fff !important;
+}
+
+.navbar-brand {
+    font-size: 1.9rem !important;
+    color: #565387 !important;
+}
+
+.navbar a {
+    font-size: 1.0rem;
+    text-transform: capitalize;
+}
+
+.menu_active {
+    font-weight: bold;
+    border-bottom: 1px solid #170dd3;
+}
+
+
+.img-fluid.animated {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+.navbar a:hover {
+    color: #3498db !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+    .menu_active {
+        font-weight: bold;
+        border-bottom: none;
+    }
+}
+.animated-image {
+    animation: bounceUpDown 1s infinite alternate; /* Use your desired animation properties */
+  }
+  
+  @keyframes bounceUpDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(20px); /* Adjust the value for the desired bounce height */
+    }
+  }
+  .custom-card-size {
+    /* Add your desired width and height here */
+    width: 300px;
+    height: 300px;
+    /* Add any other styling you need */
+  }
+  
+/* Add this CSS in your CSS file */
+.navbar-shadow {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+}
+div.stickyNote
+{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+  font-family: Arial;
+  margin: 4px;
+  transition: all 0.333s ease;
+}
+
+div.stickyNote div.stickyTitle
+{
+  display: block;
+  background: rgb(255,200,0);
+  width: 100%;
+  color: white;
+  padding: 5px 0px;
+  border-radius: 10px 10px 0px 0px; 
+  text-align: center;
+  font-size: 20px;
+  transition: background 0.333s ease;
+}
+
+div.stickyNote div.stickyContent
+{
+  font-size: 12px;
+  padding: 10px;
+  color: rgb(110,110,110);
+  text-overflow: clip;
+}
+
+div.stickyNote:hover 
+{
+  box-shadow: 0px 0px 10px black;
+}
+
+div.stickyNote:hover div.stickyTitle
+{
+  background: rgb(255,180,0);
+}
+
+h1
+{
+  font: 30px Arial;
+}
